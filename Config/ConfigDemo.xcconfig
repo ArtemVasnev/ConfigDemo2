@@ -1,0 +1,15 @@
+//
+//  ConfigDemo.xcconfig
+//  ConfigDemo
+//
+//  Created by Artem on 9/14/15.
+//  Copyright (c) 2015 Artem. All rights reserved.
+//
+
+#include "Pods/Target Support Files/Pods-ConfigDemo/Pods-ConfigDemo.debug.xcconfig"
+SDKROOT = iphoneos
+
+//OTHER_LDFLAGS = $(inherited) ${PODS_OTHER_LDFLAGS}
+//FRAMEWORK_SEARCH_PATHS = $(inherited) ${PODS_FRAMEWORK_SEARCH_PATHS}
+//HEADER_SEARCH_PATHS = $(inherited)  ${PODS_HEADER_SEARCH_PATHS} "$(BUILT_PRODUCTS_DIR)/../../Headers"
+//LIBRARY_SEARCH_PATHS = $(inherited) ${PODS_LIBRARY_SEARCH_PATHS}
