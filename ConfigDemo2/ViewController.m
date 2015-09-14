@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import <AFNetworking/AFHTTPRequestOperation.h>
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *keyLabel;
 
 @end
 
@@ -17,6 +19,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
+  self.keyLabel.text = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"Application Configuration"];
 }
 
 - (void)didReceiveMemoryWarning {

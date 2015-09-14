@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Artem. All rights reserved.
 //
 
-#include "Pods/Target Support Files/Pods-ConfigDemo/Pods-ConfigDemo.debug.xcconfig"
+#include "Pods/Target Support Files/Pods-ConfigDemo2/Pods-ConfigDemo2.debug.xcconfig"
 SDKROOT = iphoneos
 
 //OTHER_LDFLAGS = $(inherited) ${PODS_OTHER_LDFLAGS}

@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 Artem. All rights reserved.
 //
 
-#include "Pods/Target Support Files/Pods-ConfigDemo/Pods-ConfigDemo.debug.xcconfig"
+#include "Pods/Target Support Files/Pods-ConfigDemo2/Pods-ConfigDemo2.debug.xcconfig"
 
 ONLY_ACTIVE_ARCH = YES
 
-APP_FACEBOOK_ID = 123456
+APP_CONFIGURATION = DEBUG
 
 CODE_SIGN_IDENTITY = iPhone Developer
 CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Developer

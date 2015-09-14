@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 Artem. All rights reserved.
 //
 
-#include "Pods/Target Support Files/Pods-ConfigDemo/Pods-ConfigDemo.release.xcconfig"
+#include "Pods/Target Support Files/Pods-ConfigDemo2/Pods-ConfigDemo2.release.xcconfig"
 
 ONLY_ACTIVE_ARCH = NO
 
-APP_FACEBOOK_ID = 98765
+APP_CONFIGURATION = RELEASE
 
 CODE_SIGN_IDENTITY = iPhone Distribution: Globus Inc.
 CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Distribution: Globus Inc.

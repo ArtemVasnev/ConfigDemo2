@@ -14,6 +14,9 @@
 		AC6183FD1BA6F73800384AEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC6183FC1BA6F73800384AEC /* Images.xcassets */; };
 		AC6184001BA6F73800384AEC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC6183FE1BA6F73800384AEC /* LaunchScreen.xib */; };
 		AC61840C1BA6F73800384AEC /* ConfigDemo2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC61840B1BA6F73800384AEC /* ConfigDemo2Tests.m */; };
+		AC6184191BA6F85E00384AEC /* ConfigDemo.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AC6184161BA6F85E00384AEC /* ConfigDemo.xcconfig */; };
+		AC61841A1BA6F85E00384AEC /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AC6184171BA6F85E00384AEC /* Debug.xcconfig */; };
+		AC61841B1BA6F85E00384AEC /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = AC6184181BA6F85E00384AEC /* Release.xcconfig */; };
 		FD903DB79FBF6F1F939215A1 /* libPods-ConfigDemo2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6EEDE8621C7BCA1063EDA9E /* libPods-ConfigDemo2.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +45,9 @@
 		AC6184051BA6F73800384AEC /* ConfigDemo2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConfigDemo2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC61840A1BA6F73800384AEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC61840B1BA6F73800384AEC /* ConfigDemo2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConfigDemo2Tests.m; sourceTree = "<group>"; };
+		AC6184161BA6F85E00384AEC /* ConfigDemo.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ConfigDemo.xcconfig; sourceTree = "<group>"; };
+		AC6184171BA6F85E00384AEC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		AC6184181BA6F85E00384AEC /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		D119116E504BAB12E7A9D48F /* Pods-ConfigDemo2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ConfigDemo2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ConfigDemo2/Pods-ConfigDemo2.debug.xcconfig"; sourceTree = "<group>"; };
 		F6EEDE8621C7BCA1063EDA9E /* libPods-ConfigDemo2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ConfigDemo2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -77,6 +83,7 @@
 		AC6183E31BA6F73800384AEC = {
 			isa = PBXGroup;
 			children = (
+				AC6184151BA6F85E00384AEC /* Config */,
 				AC6183EE1BA6F73800384AEC /* ConfigDemo2 */,
 				AC6184081BA6F73800384AEC /* ConfigDemo2Tests */,
 				AC6183ED1BA6F73800384AEC /* Products */,
@@ -133,6 +140,16 @@
 				AC61840A1BA6F73800384AEC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC6184151BA6F85E00384AEC /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				AC6184161BA6F85E00384AEC /* ConfigDemo.xcconfig */,
+				AC6184171BA6F85E00384AEC /* Debug.xcconfig */,
+				AC6184181BA6F85E00384AEC /* Release.xcconfig */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 		E2EAB0567A8F4197F4440C12 /* Frameworks */ = {
@@ -226,7 +243,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC6183FB1BA6F73800384AEC /* Main.storyboard in Resources */,
+				AC6184191BA6F85E00384AEC /* ConfigDemo.xcconfig in Resources */,
+				AC61841B1BA6F85E00384AEC /* Release.xcconfig in Resources */,
 				AC6184001BA6F73800384AEC /* LaunchScreen.xib in Resources */,
+				AC61841A1BA6F85E00384AEC /* Debug.xcconfig in Resources */,
 				AC6183FD1BA6F73800384AEC /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +344,7 @@
 /* Begin XCBuildConfiguration section */
 		AC61840D1BA6F73800384AEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC6184161BA6F85E00384AEC /* ConfigDemo.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -367,6 +388,7 @@
 		};
 		AC61840E1BA6F73800384AEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC6184161BA6F85E00384AEC /* ConfigDemo.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -404,7 +426,7 @@
 		};
 		AC6184101BA6F73800384AEC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D119116E504BAB12E7A9D48F /* Pods-ConfigDemo2.debug.xcconfig */;
+			baseConfigurationReference = AC6184171BA6F85E00384AEC /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ConfigDemo2/Info.plist;
@@ -415,7 +437,7 @@
 		};
 		AC6184111BA6F73800384AEC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D6ACE1CBDF0BE9182586F46 /* Pods-ConfigDemo2.release.xcconfig */;
+			baseConfigurationReference = AC6184181BA6F85E00384AEC /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ConfigDemo2/Info.plist;
